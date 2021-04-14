@@ -9,19 +9,19 @@ import matplotlib.pyplot as plt
 #https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.splprep.html#scipy.interpolate.splprep
 #https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.splev.html#scipy.interpolate.splev
 
-#Primera curva
+#(Superior) Primera curva
 x0 = np.array([1, 2, 5, 6, 7, 8, 10, 13, 17], float)
 y0 = np.array([3, 3.7, 3.9, 4.2, 5.7, 6.6, 7.1, 6.7, 4.5], float)
 s0 = spi.splrep(x0, y0)
 xn0 = np.linspace(1, 17, 100)
 yn0 = spi.splev(xn0, s0)
-#Segunda curva
+#(Superior) Segunda curva
 x1 = np.array([17, 20, 23, 24, 25, 27, 27.7], float)
 y1 = np.array([4.5, 7, 6.1, 5.6, 5.8, 5.2, 4.1], float)
 s1 = spi.splrep(x1, y1)
 xn1 = np.linspace(17, 27.7, 100)
 yn1 = spi.splev(xn1, s1)
-#Tercera curva
+#(Superior) Tercera curva
 x2 = np.array([27.7, 28, 29, 30], float)
 y2 = np.array([4.1, 4.3, 4.1, 3], float)
 s2 = spi.splrep(x2, y2)
